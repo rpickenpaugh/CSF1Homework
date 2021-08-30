@@ -17,9 +17,6 @@ namespace CSF1Homework
                 string period = new string('.', i + 1);
                 Console.WriteLine($"{fruits[i]}\n{period}");
             }//end for
-
-            //string hunter2 = new string('*', userPassword.Length);
-
         }//end main
     }//end class
 }//end namespace

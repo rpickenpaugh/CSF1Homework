@@ -10,25 +10,16 @@ namespace CSF1Homework
     {
         static void Main(string[] args)
         {
-            string[] fruits = new string[6];
-            fruits[0] = "apple";
-            fruits[1] = "orange";
-            fruits[2] = "banana";
-            fruits[3] = "pomegranate";
-            fruits[4] = "papaya";
-            fruits[5] = "pear";
-
-            string period = ".";
-            int periodCtr = 0;
+            string[] fruits = {"apple", "orange", "banana", "pomegranate", "papaya", "pear"};
 
             for (int i = 0; i < fruits.Length; i++)
             {
-                Console.WriteLine($"{fruits[i]}");
-                periodCtr++;
-                Console.WriteLine(period);
-                //unfinished
-
+                string period = new string('.', i + 1);
+                Console.WriteLine($"{fruits[i]}\n{period}");
             }//end for
+
+            //string hunter2 = new string('*', userPassword.Length);
+
         }//end main
     }//end class
 }//end namespace

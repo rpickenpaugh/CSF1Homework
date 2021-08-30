@@ -47,7 +47,6 @@ namespace CSF1Homework
                 {
                     //Enter PIN
                     Console.WriteLine("Enter PIN");
-                    //Parse string for int
                     userPin = Int32.Parse(Console.ReadLine());
 
                     if (userPin != accPin)

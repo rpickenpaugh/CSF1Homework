@@ -56,18 +56,18 @@ namespace CSF1Homework
                     }//end if
                 } while (userPin != accPin && pinFailCounter != 4);
 
-                    //PIN fail if
-                    if (pinFailCounter == 4)
-                    {
-                        Console.WriteLine("\nToo many failed PIN attempts, closing program.");
-                    }//end if
-                    else
-                    {
+                //PIN fail if
+                if (pinFailCounter == 4)
+                {
+                    Console.WriteLine("\nToo many failed PIN attempts, closing program.");
+                }//end if
+                else
+                {
                     Console.WriteLine("Login successful!\n");
                     bool menuRepeat = true;
                     do
                     {
-                        
+
                         Console.WriteLine("Please select from the following:\n" +
                             "1) Deposit\n2) Withdraw\n3) Balance\n4) Exit");
                         userMenu = Console.ReadLine().ToUpper();
@@ -114,10 +114,10 @@ namespace CSF1Homework
                                 break;
                         }//end switch
                     } while (menuRepeat);
-                    }//end else
+                }//end else
 
 
-                
+
             }//end else
 
         }//end main

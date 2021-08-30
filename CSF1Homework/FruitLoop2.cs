@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace CSF1Homework
 {
-    class FruitLoop1
+    class FruitLoop2
     {
         static void Main(string[] args)
         {
-            //Declaring fruits array
             string[] fruits = new string[6];
             fruits[0] = "apple";
             fruits[1] = "orange";
@@ -19,10 +18,16 @@ namespace CSF1Homework
             fruits[4] = "papaya";
             fruits[5] = "pear";
 
-            //Looping the fruits array
-            for (int fruitPosition = 0; fruitPosition < fruits.Length; fruitPosition++)
+            string period = ".";
+            int periodCtr = 0;
+
+            for (int i = 0; i < fruits.Length; i++)
             {
-                Console.WriteLine(fruits[fruitPosition]);
+                Console.WriteLine($"{fruits[i]}");
+                periodCtr++;
+                Console.WriteLine(period);
+                //unfinished
+
             }//end for
         }//end main
     }//end class

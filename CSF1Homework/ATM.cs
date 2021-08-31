@@ -38,7 +38,7 @@ namespace CSF1Homework
             //Login fail if
             if (accFailCounter == 4)
             {
-                Console.WriteLine("\nToo many failed account number attempts, closing program.");
+                Console.WriteLine("\nToo many failed account number attempts, closing program.\n");
             }
             else
             {
@@ -58,7 +58,7 @@ namespace CSF1Homework
                 //PIN fail if
                 if (pinFailCounter == 4)
                 {
-                    Console.WriteLine("\nToo many failed PIN attempts, closing program.");
+                    Console.WriteLine("\nToo many failed PIN attempts, closing program.\n");
                 }//end if
                 else
                 {
@@ -75,6 +75,7 @@ namespace CSF1Homework
                             case "1":
                             case "DEPOSIT":
                             case "D":
+                                Console.Clear();
                                 //Deposit script
                                 Console.WriteLine("How much would you like to deposit?\n");
                                 decimal depositMoney = Decimal.Parse(Console.ReadLine());
@@ -86,6 +87,7 @@ namespace CSF1Homework
                             case "WITHDRAW":
                             case "WITHDRAWAL":
                             case "W":
+                                Console.Clear();
                                 //Withdraw script
                                 Console.WriteLine("How much would you like to withdraw?\n");
                                 decimal withdrawMoney = decimal.Parse(Console.ReadLine());
@@ -97,12 +99,14 @@ namespace CSF1Homework
                             case "BALANCE":
                             case "TOTAL":
                             case "B":
+                                Console.Clear();
                                 //Balance script
                                 Console.WriteLine($"Your total balance is: {userMoney:c}\n");
                                 break;
                             case "4":
                             case "EXIT":
                             case "E":
+                                Console.Clear();
                                 //Exit script
                                 Console.WriteLine("Thank you for your business!");
                                 menuRepeat = false;

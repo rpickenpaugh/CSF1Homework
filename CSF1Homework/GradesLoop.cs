@@ -10,11 +10,21 @@ namespace CSF1Homework
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter test scores (stick to integers):");
+            string listOfScores="";
+            string userInputString;
+            int userInput;
+
+            Console.WriteLine("Enter test scores:");
             do
             {
+                userInputString = Console.ReadLine();
+                listOfScores += userInputString + "\n ";
+                userInput = Convert.ToInt32(userInputString);
+            } while (userInput >= 0);
 
-            } while (true);
+            Console.WriteLine("\nList of Scores:\n" + listOfScores);
+            //Extra because why not.
+            //Nevermind// string[] scores = new string[]
         }
     }
 }
